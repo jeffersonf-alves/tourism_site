@@ -77,10 +77,11 @@
 .section-1 {
     display: flex;
     justify-content: space-around;
-    width: 1400px;
+    flex-wrap: wrap;
     margin: auto;
     position: relative;
     z-index: 1;
+    
 
 }
 .container-1 {
@@ -89,32 +90,57 @@
     position: relative;
     top: -90px;
     z-index: 0;
-
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+.container-1 > h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+
 }
 .section-1 div {
     width: 300px;
     height: 400px;
-
+    box-shadow: 20px 20px 1px black ;
     border-radius: 15px;
     cursor: pointer;
+
 }
 .banner-1 {
     background-image: url('../img/banner-1.jpg');
     background-position:center;
     background-size: cover;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
 }
 .banner-2 {
     background-image: url('../img/banner-2.jpg');
     background-position:center;
     background-size: cover;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
 }
 .banner-3 {
     background-image: url('../img/banner-3.jpg');
     background-position:center;
     background-size: cover;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
 }
-
+.banner-4 {
+    background-image: url('../img/banner-4.jpg');
+    background-position:center;
+    background-size: cover;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
 footer {
     height: 350px;
     background-color: #2F4F4F;
@@ -123,8 +149,9 @@ footer {
 }
 
 .banner-content {
+    color:white;
     background-color: black;
-    opacity: 0;
+    opacity: 0.4;
     transition: 1s;
     font-family: 'Roboto Slab', serif;
 }
@@ -140,6 +167,24 @@ footer {
 
 }
 .banner-content:hover {
-    opacity: 0.5;
+    opacity: 0;
     color:white;
 }
+.container-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 250px;
+    background-color: yellowgreen;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    
+}
+.container-2  > div {
+    margin: 25px;
+    padding: 25px;
+    background-color:yellow ;
+    width: 350px;
+}
+
