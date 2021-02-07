@@ -30,15 +30,26 @@ let bannerMain = document.getElementById('banner-content-1');
 let bannerMaintext = "Os melhores lugares do Brasil";
 let tam = bannerMaintext.length;
 let count = 0;
+let count2 = 0;
+
+function firstText() {
+    setInterval(() => {
+        count++
+        let text = bannerMaintext.substring(0, count);
+        bannerMain.innerText = text + "|";
+
+        if(count >= tam) {
+            bannerMain.innerText = "Só aqui";
+            setTimeout(() => {
+                count = 0;
+            }, 2000);
+            
+        }
+    }, 200);
+
+}
 
 
-setInterval(()=> {
-    count++;
-    let myText = bannerMaintext.substring(0, count);
-    bannerMain.innerText = myText + "|";
-    
-    if (count == tam) {
-        count = 0;
-    }
-}, 150)
+
+firstText();
 

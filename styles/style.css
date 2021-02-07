@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Squada+One&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -81,6 +83,8 @@
     margin: auto;
     position: relative;
     z-index: 1;
+    margin-left: 70px;
+    margin-right: 70px;
     
 
 }
@@ -97,8 +101,8 @@
     
 }
 .container-1 > h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+    font-family: 'Caveat', cursive;
+    font-size: 65px;
 
 }
 .section-1 div {
@@ -174,17 +178,39 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 250px;
-    background-color: yellowgreen;
     margin: auto;
     position: relative;
     z-index: 1;
+    margin-left: 200px;
+    margin-right: 200px;
+
     
 }
-.container-2  > div {
-    margin: 25px;
-    padding: 25px;
-    background-color:yellow ;
-    width: 350px;
+.viagens-title {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
 }
+.viagens-subtitle {
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    font-size: 50px;
+    color: #808080;
+    padding-bottom: 15px;
+}
+.container-2  > div {
+    margin: 5px;
+    padding: 10px;
+    width: 320px;
+    height: 400px;
+   
+}
+.container-2 div > h2 {
+    font-family: 'Squada One', cursive;
+}
+.img-viagens {
+    width: 320px;
+    height: 350px;
+    box-shadow: 0px 5px 5px black;
 
+}
